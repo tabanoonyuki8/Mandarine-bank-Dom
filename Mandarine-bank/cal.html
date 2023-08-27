@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank calculation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1 class="text-7xl text-center pt-10 font-extrabold text-teal-600 mb-20">Let's get some <span class="text-teal-400 animate-pulse">Moneeeeeeey</span></h1>
+        <br>
+    </header>
+    <mian>
+        <section>
+            <div class="grid grid-cols-3 gap-3 mx-auto w-9/12">
+                <!-- deposite -->
+                <div class="bg-emerald-200 
+                hover:bg-sky-300 border-2 border-yellow-500 rounded-2xl p-10" id="item-1"><h4 class="font-bold text-5xl italic">Deposite</h4>
+                    <br>
+                    <h2 id="deposite-id" class="font-bold text-5xl italic">$00</h2>
+                </div>
+                <!-- withdarw -->
+                <div class="bg-emerald-400   
+                hover:bg-sky-500 border-2 border-yellow-500 rounded-2xl p-10 " id="item-2"><h4 class="font-bold text-5xl italic">Withdraw</h4>
+            <br>
+                    <h2 id="withdraw-id" class="font-bold text-5xl italic">$00</h2>
+                </div>
+                <!-- Balance -->
+                <div class="bg-emerald-600 
+                hover:bg-sky-700 border-2 border-yellow-500 rounded-2xl p-10" id="item-3"><h4 class="font-bold text-5xl italic">Balance</h4>
+                    <br>
+                    <h2 id="Balance-id" class="font-bold text-5xl italic">$1200</h2>
+                </div>
+            </div>
+        </section>
+        <!-- input -->
+        <section>
+          <div class="grid grid-cols-2 gap-4 mx-auto w-9/12 mt-12">
+            <div class="bg-teal-500 
+                hover:bg-sky-100 border-2 border-yellow-700 rounded-2xl p-10" id="item-3"><h4 class="font-bold text-5xl">Please <span class="text-green-950">Deposite</span></h4>
+                    <br>
+                    
+                    
+                    <div>
+                        <input class="bg-black text-white text-2xl mt-5 w-9/12 h-11 p-5" type="" name="" id="deposite-enter-id" placeholder="$ Enter deposite amount">
+                        <button id="deposite-btn" class="block hover:bg-fuchsia-200 mt-7 bg-lime-300 p-4 text-3xl border-double border-4 border-indigo-600 rounded-3xl">Press here</button>
+                    </div>
+                </div>
+                <div class="bg-teal-700 
+                hover:bg-sky-100 border-2 border-yellow-700 rounded-2xl p-10" id="item-3"><h4 class="font-bold text-5xl">Please <span class="text-green-950">Withdraw</span></h4>
+                    <br>
+                    
+                    
+                    <div>
+                        <input class="bg-black text-white text-2xl mt-5 w-9/12 h-11 p-5" type="" name="" id="withdraw-enter-id" placeholder="$ Enter deposite amount">
+                        <button id="withdraw-btn" class="block hover:bg-fuchsia-200 mt-7 bg-lime-300 p-4 text-3xl border-double border-4 border-indigo-600 rounded-3xl">Press here</button>
+                    </div>
+                </div>
+          </div>
+        </section>
+    </mian>
+    <script src="js/bank.js"></script>
+</body>
+</html>
